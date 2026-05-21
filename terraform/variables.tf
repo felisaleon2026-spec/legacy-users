@@ -11,5 +11,5 @@ variable "ami" {
 }
 
 variable "iam_instance_profile" {
-  default = "LabRole"
+  default = "LabInstanceProfile"
 }
