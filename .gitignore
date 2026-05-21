@@ -1,6 +1,9 @@
 node_modules/
 .DS_Store
 Thumbs.db
+# Terraform
 .terraform/
-*.tfstate
-*.tfstate.*
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
