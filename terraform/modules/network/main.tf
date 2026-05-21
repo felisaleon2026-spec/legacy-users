@@ -6,14 +6,14 @@ resource "aws_security_group" "app_sg" {
     from_port   = var.app_port
     to_port     = var.app_port
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["192.223.112.2/32"]
   }
 
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["192.223.112.2/32"]
   }
 
   egress {
